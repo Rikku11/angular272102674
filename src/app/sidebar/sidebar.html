@@ -37,19 +37,28 @@
                 </a>
                 <ul class="nav nav-treeview" style="display: block;">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link">
+                    <a 
+                      [routerLink]="['/dashboard']" 
+                      routerLinkActive="router-link-active" 
+                      class="nav-link {{ moduleName == 'dashboard' ? 'active' : '' }}">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./index2.html" class="nav-link active">
+                    <a 
+                      [routerLink]="['/dashboard2']" 
+                      routerLinkActive="router-link-active" 
+                      class="nav-link {{ moduleName == 'dashboard2' ? 'active' : '' }}">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./index3.html" class="nav-link">
+                    <a 
+                      [routerLink]="['/dashboard3']" 
+                      routerLinkActive="router-link-active" 
+                      class="nav-link {{ moduleName == 'dashboard3' ? 'active' : '' }}">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v3</p>
                     </a>
@@ -633,6 +642,6 @@
               </a>
             </div>
           </nav>
-        </div><div class="os-scrollbar os-scrollbar-horizontal os-theme-light os-scrollbar-auto-hide os-scrollbar-handle-interactive os-scrollbar-track-interactive os-scrollbar-cornerless os-scrollbar-unusable os-scrollbar-auto-hide-hidden" style="--os-viewport-percent: 1; --os-scroll-direction: 0;"><div class="os-scrollbar-track"><div class="os-scrollbar-handle"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-theme-light os-scrollbar-auto-hide os-scrollbar-handle-interactive os-scrollbar-track-interactive os-scrollbar-visible os-scrollbar-cornerless os-scrollbar-auto-hide-hidden" style="--os-viewport-percent: 0.3795; --os-scroll-direction: 0;"><div class="os-scrollbar-track"><div class="os-scrollbar-handle"></div></div></div></div>
+        </div><div class="os-scrollbar os-scrollbar-horizontal os-theme-light os-scrollbar-auto-hide os-scrollbar-auto-hide-hidden os-scrollbar-handle-interactive os-scrollbar-track-interactive os-scrollbar-cornerless os-scrollbar-unusable" style="--os-viewport-percent: 1; --os-scroll-direction: 0;"><div class="os-scrollbar-track"><div class="os-scrollbar-handle"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-theme-light os-scrollbar-auto-hide os-scrollbar-auto-hide-hidden os-scrollbar-handle-interactive os-scrollbar-track-interactive os-scrollbar-visible os-scrollbar-cornerless" style="--os-viewport-percent: 0.3795; --os-scroll-direction: 0;"><div class="os-scrollbar-track"><div class="os-scrollbar-handle"></div></div></div></div>
         <!--end::Sidebar Wrapper-->
       </aside>
